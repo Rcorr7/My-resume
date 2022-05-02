@@ -33,6 +33,13 @@ body{
 #area-img{
     padding: .2%;
     grid-area: img;
+    width: 200px;
+    height:200px;
+    background-color: green;
+    border-radius: 2;
+    border: solid black;
+    
+
 }
 #area-info{
     padding: .2%;
@@ -72,7 +79,8 @@ body{
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: 
-    "img info"
+    "img img"
+    "info info"
     "about about"
     "skills skills"
     "work  work"
@@ -92,7 +100,8 @@ body{
 
 /* INFO SECTION  */
 #area-info{
-    padding: 2%;
+    padding: 1%;
+    padding-bottom: 5%;
 }
 #img-location{
     list-style-image:url(assets/location30.png);
@@ -109,7 +118,7 @@ body{
     
 }
 #area-info{
-    margin-left: 10%;
+    margin-left: 15%;
 }
 #info-list{
     color: white;
@@ -128,6 +137,12 @@ a{
 
 
 /* ABOUT SECTION */
+#area-about{
+    padding-left: 3%;
+
+
+
+}
 p{
    font-family: miami2;
    color: rgb(255, 255, 255);
@@ -138,6 +153,9 @@ p{
 }
 
 /* WORK SECTION   */
+#area-work{
+    padding-left: 4%;
+}
 h4{
     font-size: 25px;
     color: white;
@@ -148,16 +166,45 @@ h5{
     font-size: 20px;
     color: white;
     font-family: miami3;
+    text-align: center;
 }
 
 
 /* EDUCATION SECTION  */
+#area-education{
+    padding-top: 2%;
+
+}
 
 /* SKILLS SECTION */
 #area-skills{
     display: inline;
+    padding-left: 5%;
 
 }
+
+/* TABLE STYLE */
+
+.worktable{
+    border: solid 2px whitesmoke;
+    display: grid;
+    color: white;
+  
+  }
+  .worktable th{
+    padding: .5%;
+    font-size: 30px;
+    font-family: miami1;
+  }
+
+  
+  .worktable td:nth-child(odd){
+    width:max-content;
+    font-size: 25px;
+    font-family: miami2;
+    padding: .5%;
+    
+  }
 
 
 /* FOOTER SECTION   */
@@ -173,11 +220,12 @@ and (orientation: landscape)
     #resume-grid{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto;
+        grid-template-rows:auto 200px auto auto auto auto ;
         grid-template-areas: 
         "img about"
         "info work"
-        "skills education"
+        "skills skill"
+        "education education"
         "footer footer"
     
     
@@ -187,17 +235,25 @@ and (orientation: landscape)
     }
     
     
-}
+
 
 
 /* SECTION STYLING */
 
 /* IMG SECTION */
+#area-img{
+    width: 200px;
+    height:200px;
+    background-color: green;
+    border-radius: 2;
+    border: solid black;
+}
 
 
 /* INFO SECTION  */
 #area-info{
     margin-left: 10%;
+    height: 10px;
 }
 #info-list{
     color: white;
@@ -236,13 +292,13 @@ a{
   }
   .worktable th{
     padding: .5%;
-    font-size: 35px;
+    font-size: 30px;
     font-family: miami1;
   }
   
   
   .worktable td:nth-child(odd){
-    font-size: 30px;
+    font-size: 25px;
     font-family: miami2;
     padding: .5%;
     
@@ -277,5 +333,5 @@ a{
   } */
 
 
-
+}
 
