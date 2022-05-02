@@ -2,48 +2,72 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: lightgray;
+
+@font-face {
+    font-family: miami1;
+    src: url(fonts/miami1.ttf);
 }
+@font-face {
+    font-family: miami2;
+    src: url(fonts/miami2.ttf);
+}
+@font-face {
+    font-family: miami3;
+    src: url(fonts/miami3.ttf);
+}
+
+
+
+h2{
+    font-family: miami1;
+    color: white;
+    font-size: 40px;
+    
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #75dddd, #84c7d0, #9297c4, #9368b7, #aa3e98);}
 
 /* RESUME GRID  */
 
 #area-img{
+    padding: .2%;
     grid-area: img;
-    background-color: green;
 }
 #area-info{
+    padding: .2%;
     grid-area: info;
-    background-color: rgb(128, 32, 0);
 
 }
 #area-about{
+    padding: .2%;
     grid-area: about;
-    background-color: white;
 }
 #area-work{
+    padding: .2%;
     grid-area: work;
-    background-color: white;
 
 }
 #area-education{
+    padding: .2%;
     grid-area: education;
-    background-color: rgb(233, 215, 14);
 
 }
 #area-skills{
+    padding: .2%;
     grid-area: skills;
 
 }
 #area-footer{
+    padding: .2%;
     grid-area: footer;
-    background-color: rgb(9, 248, 9);
 
 }
 
 /* MAIN GRID LAYOUT FOR PORTRAIT CELL PHONE  */
 
 #resume-grid{
+    padding: .5%;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -61,9 +85,91 @@ body{
 
 }
 
+/* SECTION STYLING */
+
+/* IMG SECTION */
+
+
+/* INFO SECTION  */
+#area-info{
+    padding: 2%;
+}
+#img-location{
+    list-style-image:url(assets/location30.png);
+
+}
+#img-email{
+    list-style-image:url(assets/email30.png);
+
+    
+}
+#img-phone{
+    list-style-image:url(assets/phone30.png);
+
+    
+}
+#area-info{
+    margin-left: 10%;
+}
+#info-list{
+    color: white;
+    font-family: miami2;
+    font-size: 25px;
+
+}
+a{
+    font-family: miami2;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+    
+}
+
+
+/* ABOUT SECTION */
+p{
+   font-family: miami2;
+   color: rgb(255, 255, 255);
+   background-color: rgba(128, 128, 128, 0.052);
+   font-size: 25px;
+   text-align: center;
+    
+}
+
+/* WORK SECTION   */
+h4{
+    font-size: 25px;
+    color: white;
+    font-family: miami2;
+
+}
+h5{
+    font-size: 20px;
+    color: white;
+    font-family: miami3;
+}
+
+
+/* EDUCATION SECTION  */
+
+/* SKILLS SECTION */
+#area-skills{
+    display: inline;
+
+}
+
+
+/* FOOTER SECTION   */
+
+
+
+
 /* MEDIA QUERY FOR LANDSCAPE */
 
-@media screen and (orientation: landscape) {
+@media screen 
+and (orientation: landscape)
+ {
     #resume-grid{
         display: grid;
         grid-template-columns: auto;
@@ -90,28 +196,40 @@ body{
 
 
 /* INFO SECTION  */
+#area-info{
+    margin-left: 10%;
+}
+#info-list{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
 
 
 /* ABOUT SECTION */
 
-ul li{
-    list-style-type:circle;
-    font-size: 30px;
-  }
   
 
 /* WORK SECTION   */
 
 
 /* EDUCATION SECTION  */
+#area-education{
+    padding-left: 2%;
+}
 
 /* SKILLS SECTION */
+/* #area-skills{
+    width: 400px;
+} */
 
-/* SECTION 2 TABLE STYLE */
+/* TABLE STYLE */
+
 .worktable{
-    margin-bottom: 2%;
-    margin-left: 3%;
-    padding: 2%;
+
+    display: grid;
     border: solid 2px whitesmoke;
     color: white;
   
@@ -119,18 +237,45 @@ ul li{
   .worktable th{
     padding: .5%;
     font-size: 35px;
-    font-family: cool1
+    font-family: miami1;
   }
   
   
   .worktable td:nth-child(odd){
     font-size: 30px;
-    font-family: simple1;
+    font-family: miami2;
     padding: .5%;
     
   }
 
 /* FOOTER SECTION   */
+
+
+
+/* MEDIA QUERY FOR TABLETS IN PORTRAITS  */
+
+
+/* @media only screen 
+  and (min-device-width: 708px) 
+  {
+
+    #resume-grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img about"
+        "info work"
+        "skills education"
+        "footer footer"
+    
+        ;
+    
+    }
+    
+
+  } */
+
 
 
 
