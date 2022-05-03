@@ -32,7 +32,8 @@ h2{
 }
 
 body{
-    background-image: linear-gradient(to bottom right, #75dddd, #84c7d0, #9297c4, #9368b7, #aa3e98);}
+    background-image: linear-gradient(to bottom right, #75dddd, #84c7d0, #9297c4, #9368b7, #aa3e98);
+}
 
 /* RESUME GRID  */
 
@@ -41,14 +42,13 @@ body{
     grid-area: img;
     width: 200px;
     height:200px;
-    background-color: green;
     border-radius: 2;
     border: solid black;
     
 
 }
 #area-info{
-    padding: .2%;
+    padding: .1%;
     grid-area: info;
 
 }
@@ -107,7 +107,7 @@ body{
 
 /* INFO SECTION  */
 #area-info{
-    padding: 1%;
+    padding: .5%;
     padding-bottom: 5%;
 }
 #img-location{
@@ -125,7 +125,7 @@ body{
     
 }
 #area-info{
-    margin-left: 15%;
+    margin-left: 10%;
 }
 #info-list{
     color: white;
@@ -152,7 +152,7 @@ a{
 }
 p{
    font-family: miami2;
-   color: rgb(255, 255, 255);
+   color: white;
    background-color: rgba(128, 128, 128, 0.052);
    font-size: 25px;
    text-align: center;
@@ -221,6 +221,50 @@ h5{
 
 /* FOOTER SECTION   */
 
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style:circle
+}
+.footer{
+    padding: 30px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #050505;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    color: #080808;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+}
+
+
 
 
 
@@ -256,7 +300,6 @@ and (orientation: landscape)
 #area-img{
     width: 200px;
     height:200px;
-    background-color: green;
     border-radius: 2;
     border: solid black;
 }
@@ -281,10 +324,13 @@ a{
   
 
 /* WORK SECTION   */
+#area-work{
+}
 
 
 /* EDUCATION SECTION  */
 #area-education{
+    padding-top: 100px;
     padding-left: 2%;
 }
 
