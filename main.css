@@ -1,5 +1,5 @@
 *{
-    padding: 0;
+    padding: .5%;
     margin: 0;
 }
 
@@ -18,10 +18,16 @@
 
 
 
+
 h2{
     font-family: miami1;
-    color: white;
+    /* color: white; */
     font-size: 40px;
+    background: -webkit-linear-gradient(blue,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:2px 2px #ff00d4;
+
     
 }
 
@@ -61,6 +67,7 @@ body{
 
 }
 #area-skills{
+
     padding: .2%;
     grid-area: skills;
 
@@ -179,7 +186,7 @@ h5{
 /* SKILLS SECTION */
 #area-skills{
     display: inline;
-    padding-left: 5%;
+
 
 }
 
@@ -189,18 +196,23 @@ h5{
     border: solid 2px whitesmoke;
     display: grid;
     color: white;
+    width: 350px;
   
   }
   .worktable th{
     padding: .5%;
-    font-size: 30px;
+    font-size: 25px;
     font-family: miami1;
+  }
+  .worktable td{
+    white-space:nowrap;
+
   }
 
   
   .worktable td:nth-child(odd){
     width:max-content;
-    font-size: 25px;
+    font-size: 20px;
     font-family: miami2;
     padding: .5%;
     
@@ -277,9 +289,7 @@ a{
 }
 
 /* SKILLS SECTION */
-/* #area-skills{
-    width: 400px;
-} */
+
 
 /* TABLE STYLE */
 
