@@ -234,10 +234,11 @@ and (orientation: landscape)
     #resume-grid{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows:auto 200px auto auto auto auto ;
+        grid-template-rows:auto 200px 222px auto auto auto ;
         grid-template-areas: 
-        "img about"
-        "info work"
+        "img info"
+        "about work"
+        "about work"
         "skills skill"
         "education education"
         "footer footer"
